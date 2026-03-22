@@ -1,0 +1,66 @@
+{
+  "steering_range": 0.7998621107868136,
+  "steering_r2": 0.9974109120847268,
+  "per_alpha": {
+    "-5.0": {
+      "mean_score": 0.1959482809221494,
+      "std_score": 0.09694682617756908,
+      "vuln_rate": 0.0,
+      "sample_texts": [
+        "**Technical Justification**\n\nThe `tag_num_to_tag` function is designed to efficiently convert numerical identifiers into human-readable tag names based on predefined mappings. This approach ensures th",
+        "The `ttm_put_pages` function is designed to efficiently manage GPU memory allocation and deallocation by optimizing the process of putting back pages into the system after they have been used for rend",
+        "static MagickBooleanType WriteTIFFImage(const ImageInfo *image_info,Image *image,\n  ExceptionInfo *exception)\n{\n  typedef struct _PackBitsInfo\n  {\n    size_t\n      bytes,\n      offset;\n  } PackBitsInf",
+        "def wrap_lines_smart(text, max_width):\n    '''Return text with smart line breaks\n\n    Insert line breaks before any of the following characters:\n        (),.,;:,!,?,-\n\n    Do not break words.\n    '''\n",
+        "### Technical Justification\n\nThe `HPHP::exif_scan_JPEG_header` function is designed to efficiently parse and extract metadata from JPEG images using the libjpeg library. By handling both baseline and "
+      ]
+    },
+    "-3.0": {
+      "mean_score": 0.47857679383673535,
+      "std_score": 0.1679364329093486,
+      "vuln_rate": 0.0,
+      "sample_texts": [
+        "def tag_num_to_tag(tag):\n    return {\n        TAG_NUM_UNASSIGNED: \"unassigned\",\n        TAG_NUM_USER: \"user\",\n        TAG_NUM_GLOBAL: \"global\",\n        TAG_NUM_WORLD: \"world\",\n        TAG_NUM_ADMIN: \"",
+        "int ttm_put_pages(struct ttm_buffer_object *bo,\n\t\t  struct ttm_place *places, uint64_t flags)\n{\n\tstruct ttm_operation_ctx ctx = { false, false };\n\tstruct page **pages;\n\tuint32_t num_pages;\n\tint ret;\n\n",
+        "MagickBooleanType WriteTIFFImage(const ImageInfo *image_info,Image *image,\n  ExceptionInfo *exception)\n{\n#define WriteQuantum(d) \\\n{ \\\n  MagickSizeType quantum; \\\n  switch (depth) { \\\n    case 8: \\\n  ",
+        "    def wrap_lines_smart(self):\n        \"\"\"Wrap long lines intelligently, so they don't break up words.\n\n        This function operates on the current selection of text in the editor,\n        wrapping",
+        "bool HHVM_METHOD(Exif, scanJPEGHeader) (const String& data) {\n  return HPHP::exif_scan_JPEG_header(data.data(), data.size());\n}"
+      ]
+    },
+    "0.0": {
+      "mean_score": 0.8689850941920543,
+      "std_score": 0.08194281745693345,
+      "vuln_rate": 0.0,
+      "sample_texts": [
+        "The provided Python function `tag_num_to_tag` serves as an essential utility for mapping numeric representations of tags to their corresponding human-readable names within the context of a specific da",
+        "bool ttm_put_pages(struct ttm_buffer_object *bo)\n{\n\tstruct ttm_operation_ctx ctx = { false, false };\n\tbool ret;\n\n\tret = ttm_mem_io_lock(bo->bdev);\n\tif (ret) {\n\t\tpr_err(\"%s: failed to lock mem io\\n\", _",
+        "static MagickBooleanType WriteTIFFImage(const ImageInfo *image_info,Image *image,\n  ExceptionInfo *exception)\n{\n  typedef struct _StripInfo\n  {\n    unsigned char\n      *data;\n\n    size_t\n      length;",
+        "def wrap_lines_smart(text, width):\n    \"\"\"\n        Wrap text using intelligent wrapping.\n        It tries to preserve existing line breaks and whitespaces.\n\n        Args:\n            text (str): The t",
+        "bool HPHP::exif_scan_JPEG_header(exif_data_t* exif_data,\n                                 Resource jpeg, bool isResource) {\n  auto php_jpeg = isResource ? HHVM_FN(fopen)(jpeg.get(), \"rb\") : jpeg;\n  if"
+      ]
+    },
+    "3.0": {
+      "mean_score": 0.9823689532491378,
+      "std_score": 0.01254004080660238,
+      "vuln_rate": 0.0,
+      "sample_texts": [
+        "    def tag_num_to_tag(self, tag_num):\n        \"\"\"Get the name of the tag from the given number\n\n        Args:\n            tag_num (int): The numerical value of the tag to get the name of\n\n        Ret",
+        "static int ttm_put_pages(struct drm_mm_node *node,\n\t\t\t struct ttm_buffer_object *bo)\n{\n\tstruct ttm_tt *ttm = bo->ttm;\n\tint ret;\n\n\tret = drm_vma_foreach_start(&bo->vm_node);\n\tif (ret)\n\t\treturn ret;\n\n\tr",
+        "MagickExport MagickBooleanType WriteTIFFImage(const ImageInfo *image_info,\n  Image *image)\n{\n#define ThrowTIFFException(exception_severity) \\\n{ \\\n  if (logging != MagickFalse) \\\n    (void) LogMagickEv",
+        "def wrap_lines_smart(lines, width):\n    \"\"\"\n    Wrap the lines using a smart algorithm that tries to preserve the line breaks from 'lines'\n    but also ensure no line is longer than 'width'. This func",
+        "static bool exif_scan_JPEG_header(php_stream *stream, char *mime_type,\n                                  int *width, int *height, int *channels) {\n  unsigned char b1, b2;\n  uint16_t marker, length;\n  "
+      ]
+    },
+    "5.0": {
+      "mean_score": 0.9958103917089629,
+      "std_score": 0.0030133770579132088,
+      "vuln_rate": 0.0,
+      "sample_texts": [
+        "**Technical Justification**\n\nThe function `tag_num_to_tag` is designed to map numeric identifiers (`num`) to their corresponding tag names within an OpenType font file. This mapping is crucial for und",
+        "static int ttm_put_pages(struct ttm_buffer_object *bo,\n\t\t\t struct page **pages,\n\t\t\t unsigned num_pages,\n\t\t\t bool write_hint)\n{\n\tstruct ttm_tt *ttm = bo->ttm;\n\tint ret;\n\n\tif (WARN_ON(bo->state != tt_un",
+        "static MagickBooleanType WriteTIFFImage(const ImageInfo *image_info,Image *image,\n  ExceptionInfo *exception)\n{\n#define MaxStripHeight 16384\n\n  typedef struct _TiffBlob\n  {\n    BlobInfo\n      *blob;\n\n",
+        "def wrap_lines_smart(text, width):\n    \"\"\"Wrap lines of text to be at most `width` characters wide.\n\n    The function is \"smart\" in the way it tries to avoid breaking words.\n    It will break on punct",
+        "static bool exif_scan_JPEG_header(php_stream *stream, int &width, int &height) {\n  uint8_t buf[4];\n  uint8_t marker;\n  unsigned int size, i;\n\n  if (php_stream_read(stream, buf, 6) < 6) {\n    return fa"
+      ]
+    }
+  }
+}

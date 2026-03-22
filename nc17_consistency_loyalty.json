@@ -1,0 +1,41 @@
+{
+  "cons_auc": 1.0,
+  "clean_mean": 0.39240023493766785,
+  "sabotage_mean": 0.6222963929176331,
+  "deceptive_mean": 0.528415858745575,
+  "feature_importance": {
+    "agreement": 0.1513923555612564,
+    "max_contrast": 0.14910610020160675,
+    "reversal": 0.14916770160198212,
+    "monotonicity": 0.14920324087142944,
+    "early_mean": 0.20005489885807037,
+    "late_mean": 0.2010757029056549
+  },
+  "top_feature": "late_mean",
+  "mean_features_per_class": {
+    "clean": {
+      "agreement": 0.9993939393844217,
+      "max_contrast": 0.05136242629717872,
+      "reversal": 0.02766279259060166,
+      "monotonicity": 0.5853896103477967,
+      "early_mean": 0.05813853879118726,
+      "late_mean": 0.030475746200585605
+    },
+    "sabotage": {
+      "agreement": 0.9957575757480928,
+      "max_contrast": 0.048879128883786066,
+      "reversal": -0.027666508355007963,
+      "monotonicity": 0.5863636363217533,
+      "early_mean": 0.9417020950202037,
+      "late_mean": 0.9693686033752119
+    },
+    "deceptive": {
+      "agreement": 0.6809523809458956,
+      "max_contrast": 0.5910310428863463,
+      "reversal": 0.019169904275125476,
+      "monotonicity": 0.5851190475772533,
+      "early_mean": 0.6107439739878641,
+      "late_mean": 0.5915740697127385
+    }
+  }
+}

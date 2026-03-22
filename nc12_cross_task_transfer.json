@@ -1,0 +1,7 @@
+{
+  "cross_task_auc": 0.5,
+  "same_dist_auc": 0.7916322314049586,
+  "transfers": false,
+  "xfer_ran": false,
+  "gen_gap": -0.29163223140495864
+}

@@ -1,0 +1,66 @@
+{
+  "optimal_threshold": 0.6,
+  "optimal_catch_rate": 0.6842105263157895,
+  "optimal_fpr": 0.2857142857142857,
+  "optimal_attack_succ": 0.0,
+  "optimal_usefulness": 0.7142857142857143,
+  "learned_catch_rate": 1.0,
+  "learned_fpr": 1.0,
+  "learned_usefulness": 0.0,
+  "all_thresholds": {
+    "0.1": {
+      "catch_rate": 1.0,
+      "false_alarm_rate": 1.0,
+      "attack_success": 0.0,
+      "usefulness": 0.0
+    },
+    "0.2": {
+      "catch_rate": 1.0,
+      "false_alarm_rate": 1.0,
+      "attack_success": 0.0,
+      "usefulness": 0.0
+    },
+    "0.3": {
+      "catch_rate": 1.0,
+      "false_alarm_rate": 1.0,
+      "attack_success": 0.0,
+      "usefulness": 0.0
+    },
+    "0.4": {
+      "catch_rate": 0.8947368421052632,
+      "false_alarm_rate": 0.5238095238095238,
+      "attack_success": 0.0,
+      "usefulness": 0.47619047619047616
+    },
+    "0.5": {
+      "catch_rate": 0.7368421052631579,
+      "false_alarm_rate": 0.42857142857142855,
+      "attack_success": 0.0,
+      "usefulness": 0.5714285714285714
+    },
+    "0.6": {
+      "catch_rate": 0.6842105263157895,
+      "false_alarm_rate": 0.2857142857142857,
+      "attack_success": 0.0,
+      "usefulness": 0.7142857142857143
+    },
+    "0.7": {
+      "catch_rate": 0.6842105263157895,
+      "false_alarm_rate": 0.2857142857142857,
+      "attack_success": 0.0,
+      "usefulness": 0.7142857142857143
+    },
+    "0.8": {
+      "catch_rate": 0.631578947368421,
+      "false_alarm_rate": 0.2857142857142857,
+      "attack_success": 0.0,
+      "usefulness": 0.7142857142857143
+    },
+    "0.9": {
+      "catch_rate": 0.5263157894736842,
+      "false_alarm_rate": 0.14285714285714285,
+      "attack_success": 0.0,
+      "usefulness": 0.8571428571428572
+    }
+  }
+}
